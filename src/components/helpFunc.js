@@ -136,6 +136,7 @@ export const findDatesInString = (inner) => {
 }
 
 /**
+ * Create archive table
  * 
  * @param {*} table 
  * @param {string[]} archiveHead 
@@ -203,6 +204,7 @@ export const createArchiveTable = (table, archiveHead) => {
     }
 }
 /**
+ * Add note to archive
  * 
  * @param {number} id 
  */
