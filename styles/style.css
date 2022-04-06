@@ -1,0 +1,121 @@
+html {
+  font-size: medium;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+}
+
+body {
+  width: 95%;
+  margin: 20 auto;
+  padding: 0 20px 20px 20px;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 20px auto;
+  width: 100%;
+}
+
+th{
+  background-color: grey;
+  color: white;
+}
+
+th, td{
+  padding: 5px 5px;
+  
+}
+
+tr{
+  background-color: aliceblue;
+  border: 5px solid white;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.archTable{
+  margin-top: 50px;
+}
+
+.width32{
+  padding: 0;
+}
+
+.hidRow{
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 5px 0 5px 10px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+.dataModalView{
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 40px 0 40px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+.alignCenter{
+  text-align: center;
+}
+
+.borderWhite{
+  border: 1px solid white;
+}
+
+.craeteNoteButton{
+  text-align: right;
+}
+
+.alignRight{
+  text-align: right;
+}
+
+.modalwin { 
+  height: 300px;  
+  width: 300px;
+  background: white;
+  top: 20%; /* отступ сверху */
+  right: 0;
+  left: 0;
+  font-size: 14px; 
+  margin: 0 auto;
+  z-index:2; /* поверх всех */
+  display: none;  /* сначала невидим */
+  position: fixed; /* фиксированное позиционирование, окно стабильно при прокрутке */
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.modalwinView { 
+  height: 300px;  
+  width: 70%;
+  background: white;
+  top: 20%; /* отступ сверху */
+  right: 0;
+  left: 0;
+  font-size: 14px; 
+  margin: 0 auto;
+  z-index:2; /* поверх всех */
+  display: none;  /* сначала невидим */
+  position: fixed; /* фиксированное позиционирование, окно стабильно при прокрутке */
+  padding: 15px;
+  padding-top: 35px;
+  border: 1px solid black;
+}
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}

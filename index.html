@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Notes</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body">
+  <table id="notes"></table>
+  <div id="createNoteButton"></div>
+  <table id="archive"  class="archTable"></table>
+
+  <div id="modalWin" class="modalwin">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+    </svg>
+    <form method="dialog" name="createNoteForm">
+      <p>
+        <label for="name">Name</label>
+        <input type="text" name="name">
+      </p>
+      <p>
+        <label for="category">Category</label>
+        <select name="category">
+          <option disabled>Choose category</option>
+          <option value="Task">Task</option>
+          <option value="Random Thought">Random Thought</option>
+          <option value="Idea">Idea</option>
+        </select>
+      </p>
+      <p>
+        Content<br>
+        <textarea name="content" cols="25" rows="5"></textarea>
+      </p>
+      <p class="alignRight">
+        <input type="submit" value="Create" id="create">
+      </p>
+    </form>
+  </div>
+
+ <!-- Modal window for edit note-->
+  <div id="editModalWin" class="modalwin">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="editClose">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+    </svg>
+    <form method="dialog" name="editNoteForm">
+      <p>
+        <label for="editName">Name</label>
+        <input type="text" name="editName">
+      </p>
+      <p>
+        <label for="editCategory">Category</label>
+        <select name="editCategory">
+          <option disabled>Choose category</option>
+          <option value="Task">Task</option>
+          <option value="Random Thought">Random Thought</option>
+          <option value="Idea">Idea</option>
+        </select>
+      </p>
+      <p>
+        Content<br>
+        <textarea name="editContent" cols="25" rows="5"></textarea>
+      </p>
+      <p class="alignRight">
+        <input type="submit" value="Edit" id="edit">
+      </p>
+    </form>
+  </div>
+
+
+  <!--Modal window for view archived notes-->
+  <div id="viewArchNotes" class="modalwinView">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="viewArchClose">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+    </svg>
+    <table id="viewArchTable"></table>
+  </div>
+
+  <script src="/dist/index_bundle.js"></script>
+</body>
+
+</html>

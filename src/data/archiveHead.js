@@ -1,0 +1,1 @@
+export let archiveHead = ['Note Category', 'Active', 'Archived', ''];
